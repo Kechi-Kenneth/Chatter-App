@@ -1,0 +1,130 @@
+.nav-wrapper {
+  background:rgba(0, 0, 0, 0.1) ;
+  padding: 0.5rem 0;
+  position:fixed ;
+
+  top: 0;
+  z-index: 40;
+  left: 0;
+  right: 0;
+  border-bottom: 0.5px solid  rgb(80, 77, 77);
+  backdrop-filter: blur(50px);
+}
+
+.app-name {
+
+font-weight: 900;
+font-size: 2rem;
+}
+
+
+.menu-item {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.nav-content {
+  color: black;
+  height: 4rem;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  width: 5rem;
+  height: auto;
+}
+
+
+.nav-content ul {
+  
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.nav-content li {
+margin: 0 1rem;
+
+}
+
+.menu-item::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, white, gray 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+
+.menu-item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 3;
+}
+
+
+@media (max-width: 425px) {
+  .nav-logo {
+    width: 10rem;
+    height: auto;
+  }
+  .app-name {
+    margin-right: 18rem;
+  }
+}
+
+ @media (max-width: 740px) {
+
+  .nav-content ul {
+    display: none;
+  }
+
+  .app-name {
+    margin-right: 18rem;
+  }
+
+} 
+
+
+@media (max-width:1325px) {
+  .nav-wrapper {
+    padding: 0.2rem;
+
+  }
+}
+
+
+.fade-in-out {
+  animation: fadeInOut 8s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+.search-icon {
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-top: 1.3rem;
+}
+
