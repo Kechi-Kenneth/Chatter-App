@@ -1,8 +1,7 @@
-.nav-wrapper {
+/* .nav-wrapper {
   background:rgba(0, 0, 0, 0.1) ;
   padding: 0.5rem 0;
   position:fixed ;
-
   top: 0;
   z-index: 40;
   left: 0;
@@ -128,3 +127,63 @@ margin: 0 1rem;
   margin-top: 1.3rem;
 }
 
+.search-icon:hover {
+  height: 2rem;
+  width: 2rem;
+}
+ */
+
+
+ .nav-wrapper {
+  background:rgba(0, 0, 0, 0.1) ;
+  padding: 0.5rem 0;
+  position:fixed ;
+  top: 0;
+  z-index: 40;
+  left: 0;
+  right: 0;
+  color: black;
+  border-bottom: 0.5px solid  rgb(80, 77, 77);
+  backdrop-filter: blur(50px);
+}
+
+.nav-content {
+  color: black;
+  height: 4rem;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.nav-content ul {
+  
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+
+.nav-logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.app-name {
+
+  font-weight: 900;
+  font-size: 2rem;
+  }
+  
