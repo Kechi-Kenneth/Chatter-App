@@ -1,5 +1,6 @@
 
 .navbar {
+  
   background:rgba(0, 0, 0, 0.1) ;
   padding: 0.5rem 0;
   position:fixed ;
@@ -13,9 +14,9 @@
 }
 
 .nav-content {
-  max-width: 1300px;
+  max-width: 1250px;
   display: flex;
-  height: 2rem;
+  height: 1.8rem;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -165,4 +166,52 @@
   width: 8%;
   transform: translateX(0);
   opacity: 3;
+}
+
+.my-account img {
+  border-radius: 0.8rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  box-shadow: rgb(80, 90, 99) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.my-account img:hover {
+ 
+  background-color: rgb(82, 82, 121);  
+}
+
+.dark-mode img {
+  border-radius: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  box-shadow: rgb(139, 143, 146) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.dark-mode:hover  {
+  background-color: rgb(220, 220, 255);  
+
+}
+
+.notification img {
+  border-radius: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  box-shadow: rgb(188, 191, 193) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.notification:hover  {
+  background-color: rgb(220, 220, 255); 
+
+}
+
+.create-post img {
+  border-radius: 1rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  box-shadow: rgb(80, 90, 99) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+.create-post:hover  {
+  background-color: rgb(220, 220, 255); 
 }

@@ -4,11 +4,15 @@ import SearchBar from './SearchBar/SearchBar';
 import { NavItemProps } from '../Types/NavBarTypes';
 
 
+
+
+
 const NavItem: React.FC<NavItemProps> = ({ item, type, icon, className }) => {
   if (type === 'icon' && icon) {
     return (
       <li  className={`nav-item ${className}`}>
-        <img src={icon} alt={item} />
+        <img src={icon} alt={item} data-tip={item} />
+     
       </li>
     );
   }

@@ -20,6 +20,7 @@ const App: React.FC = () => {
         title="ChaTTer"
         icon="public/icons8-favorite-chat-message-100.png"
         items={NavBarItems}
+        
       />
     </div>
   );
