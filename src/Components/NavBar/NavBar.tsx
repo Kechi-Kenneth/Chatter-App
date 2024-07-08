@@ -1,11 +1,13 @@
 // src/components/NavBar.tsx
 import React from 'react';
 import NavItem from './NavItem';
+import './NavBar.css';
 import { NavBarProps } from '../Types/NavBarTypes';
 
 const NavBar: React.FC<NavBarProps> = ({ title, icon, items }) => {
   return (
     <nav className="navbar">
+      <div className="nav-content">
       <div className="navbar-header">
         <img src={icon} alt="icon" className="navbar-icon" />
         <h1 className="navbar-title">{title}</h1>
@@ -15,6 +17,7 @@ const NavBar: React.FC<NavBarProps> = ({ title, icon, items }) => {
           <NavItem key={index} {...navItem} />
         ))}
       </ul>
+      </div>
     </nav>
   );
 };

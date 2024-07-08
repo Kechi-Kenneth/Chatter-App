@@ -8,6 +8,7 @@ const SearchBar = () => {
       <button type='submit' className='search-button'>
         <img src='./public/icons8-search-52.png' alt='search'/>
       </button>
+      
     </div>
   )
 }

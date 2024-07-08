@@ -1,23 +1,25 @@
-// src/App.tsx
+
 import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
 
 const App: React.FC = () => {
-  const items = [
-    { type: 'text', item: 'Home' },
-    { type: 'text', item: 'About' },
-    { type: 'text', item: 'Services' },
-    { type: 'search', item: 'Blog' },
-    { type: 'icon', item: 'Contact', icon: '/path/to/contact-icon.png' },
-    { type: 'icon', item: 'Login', icon: '/path/to/login-icon.png' }
+  const NavBarItems:Array<{ type: 'text' | 'icon' | 'search'; item: string; icon?: string, className?:string  }> = [
+    { type: 'text', item: 'My feed', className: "my-feed" },
+    { type: 'text', item: 'Discussions', className: "discussions" },
+    { type: 'text', item: ' More>' , className: "more"  },
+    { type: 'search', item: 'Search' , className: "searchbar"  },
+    { type: 'icon', item: 'Make a Post', icon: 'icons8-create-post-64.png' , className: "create-post"  },
+    { type: 'icon', item: 'Notification', icon: 'icons8-notification-bell-24.png' , className: "notification"  },
+    { type: 'icon', item: 'Darkmode', icon: 'icons8-moon-symbol-48.png' , className: "dark-mode"  },
+    { type: 'icon', item: 'User Profile', icon: 'icons8-account-64.png' , className: "my-account"  }
   ];
 
   return (
     <div className="App">
       <NavBar
-        title="My Website"
-        icon="/path/to/icon.png"
-        items={items}
+        title="ChaTTer"
+        icon="public/icons8-favorite-chat-message-100.png"
+        items={NavBarItems}
       />
     </div>
   );

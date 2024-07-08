@@ -1,4 +1,5 @@
-/* .nav-wrapper {
+
+.navbar {
   background:rgba(0, 0, 0, 0.1) ;
   padding: 0.5rem 0;
   position:fixed ;
@@ -8,55 +9,29 @@
   right: 0;
   border-bottom: 0.5px solid  rgb(80, 77, 77);
   backdrop-filter: blur(50px);
-}
-
-.app-name {
-
-font-weight: 900;
-font-size: 2rem;
-}
-
-
-.menu-item {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  color: black;
-  position: relative;
-  cursor: pointer;
-
+  
 }
 
 .nav-content {
-  color: black;
-  height: 4rem;
   max-width: 1300px;
   display: flex;
+  height: 2rem;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 1rem 0;
 }
-
-.nav-logo {
-  width: 5rem;
-  height: auto;
-}
-
 
 .nav-content ul {
-  
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
-.nav-content li {
-margin: 0 1rem;
+/* 
 
-}
-
-.menu-item::before {
+.navbar-items li::before {
   content: " ";
   width: 2rem;
   height: 0.2rem;
@@ -70,11 +45,48 @@ margin: 0 1rem;
 }
 
 
-.menu-item:hover::before {
+.navbar-items li:hover::before {
   width: 100%;
   transform: translateX(0);
   opacity: 3;
+} */
+
+
+.navbar-items {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  position: relative;
+  cursor: pointer;
+
 }
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 5rem;
+  height: 5.5rem;
+}
+
+.navbar-title {
+  margin-left: -14px;
+}
+
+
+
+.navbar-items {
+  cursor: pointer;
+}
+
+.navbar-items img {
+  width: 20px;
+  height: 20px;
+}
+
 
 
 @media (max-width: 425px) {
@@ -82,21 +94,13 @@ margin: 0 1rem;
     width: 10rem;
     height: auto;
   }
-  .app-name {
-    margin-right: 18rem;
-  }
 }
 
  @media (max-width: 740px) {
 
-  .nav-content ul {
+  .navbar-content ul {
     display: none;
   }
-
-  .app-name {
-    margin-right: 18rem;
-  }
-
 } 
 
 
@@ -107,83 +111,58 @@ margin: 0 1rem;
   }
 }
 
-
-.fade-in-out {
-  animation: fadeInOut 8s infinite;
-}
-
-@keyframes fadeInOut {
-  0%, 100% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 1;
-  }
-}
-
-.search-icon {
-  height: 1.7rem;
-  width: 1.7rem;
-  margin-top: 1.3rem;
-}
-
-.search-icon:hover {
-  height: 2rem;
+.my-feed::before {
+  content: " ";
   width: 2rem;
-}
- */
-
-
- .nav-wrapper {
-  background:rgba(0, 0, 0, 0.1) ;
-  padding: 0.5rem 0;
-  position:fixed ;
-  top: 0;
-  z-index: 40;
-  left: 0;
-  right: 0;
-  color: black;
-  border-bottom: 0.5px solid  rgb(80, 77, 77);
-  backdrop-filter: blur(50px);
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
 }
 
-.nav-content {
-  color: black;
-  height: 4rem;
-  max-width: 1300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+.my-feed:hover::before {
+  width: 9%;
+  transform: translateX(0);
+  opacity: 3;
+}
+.discussions:hover::before {
+  width: 13%;
+  transform: translateX(0);
+  opacity: 3;
 }
 
-.menu-item {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  color: black;
-  position: relative;
-  cursor: pointer;
-
+.discussions::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
 }
 
-.nav-content ul {
-  
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  list-style: none;
+.more::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
 }
 
-
-.nav-logo {
-  width: 5rem;
-  height: 5rem;
+.more:hover::before {
+  width: 8%;
+  transform: translateX(0);
+  opacity: 3;
 }
-
-.app-name {
-
-  font-weight: 900;
-  font-size: 2rem;
-  }
-  
