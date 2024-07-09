@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom"
 
-import './Welcome.css'
+const WelcomePage = () => {
 
 
-
-const Welcome = () => {
   return (
     <div>
-      
-    </div>
+    <h1>Welcome</h1>
+    <Link to="/signup">Sign Up</Link>
+  </div>
   )
 }
 
-export default Welcome
+export default WelcomePage
+
