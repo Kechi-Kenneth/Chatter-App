@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import WelcomePageNavBar from "./WelcomePageNavBar";
+import WelcomeBody from "./WelcomeBody/welcomeBody";
+import WelcomeFooter from "./WelcomeFooter/WelcomeFooter";
 
 const WelcomePage = () => {
   const NavBarItems: Array<{
@@ -27,7 +29,8 @@ const WelcomePage = () => {
         icon="icons8-favorite-chat-message-100.png"
         items={NavBarItems}
       />
-    
+    <WelcomeBody />
+    <WelcomeFooter />
     </div>
   );
 };
