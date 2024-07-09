@@ -1,4 +1,4 @@
-// src/components/NavItem.tsx
+
 import React from 'react';
 import SearchBar from './SearchBar/SearchBar';
 import { NavItemProps } from '../Types/NavBarTypes';

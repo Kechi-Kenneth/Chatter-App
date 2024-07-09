@@ -1,0 +1,264 @@
+
+.navbar {
+  background:rgba(0, 0, 0, 0.1) ;
+  padding: 0.5rem 0;
+  position:fixed ;
+  margin-top: 1.5rem;
+  z-index: 40;
+  margin-left: 5rem;
+  width: 1100px;
+  border-radius: 20px;
+  border-bottom: 0.5px solid  rgb(80, 77, 77);
+  backdrop-filter: blur(50px);
+  
+}
+
+.nav-content {
+  max-width: 1250px;
+  display: flex;
+  height: 1.8rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.nav-content ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* 
+
+.navbar-items li::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, white, gray 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+
+.navbar-items li:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 3;
+} */
+
+
+.navbar-items {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 5rem;
+  height: 5.5rem;
+}
+
+.navbar-title {
+  margin-left: -14px;
+}
+
+
+
+.navbar-items {
+  cursor: pointer;
+}
+
+.navbar-items img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+@media (max-width: 425px) {
+  .nav-logo {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+ @media (max-width: 740px) {
+
+  .navbar-content ul {
+    display: none;
+  }
+} 
+
+
+@media (max-width:1325px) {
+  .nav-wrapper {
+    padding: 0.2rem;
+
+  }
+}
+
+.my-feed::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+.my-feed:hover::before {
+  width: 9%;
+  transform: translateX(0);
+  opacity: 3;
+}
+.features:hover::before {
+ 
+  width: 11%;
+  transform: translateX(0);
+  opacity: 3;
+}
+
+.features::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+.more::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+.more:hover::before {
+  width: 8%;
+  transform: translateX(0);
+  opacity: 3;
+}
+
+
+.memberships::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+.memberships:hover::before {
+  width: 15%;
+  transform: translateX(0);
+  opacity: 3;
+}
+
+.more::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+.sign-in:hover::before {
+  width: 8%;
+  transform: translateX(0);
+  opacity: 3;
+}
+
+.sign-in::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, rgb(198, 198, 198), rgb(99, 98, 98) 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.3rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+
+
+
+.notification:hover  {
+  background-color: rgb(220, 220, 255); 
+
+}
+
+.create-post img {
+  border-radius: 1rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  box-shadow: rgb(80, 90, 99) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+.create-post:hover  {
+  background-color: rgb(220, 220, 255); 
+}
+
+.get-started {
+  font-size:0.7rem;
+  font-weight: 500;
+  margin-left: -10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+ background-color: rgb(19, 19, 46);
+ height: 2.5rem;
+ color: white;
+ width: 6rem;
+ border-radius: 1rem;
+}
+
+.get-started:hover {
+  font-size:0.9rem;
+  text-decoration: none;
+  background-color: aliceblue;
+  color: black;
+}
