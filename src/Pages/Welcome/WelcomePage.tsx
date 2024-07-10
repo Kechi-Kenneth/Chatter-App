@@ -18,7 +18,7 @@ const WelcomePage = () => {
       type: "icon",
       item: "Write",
       icon: "icons8-create-post-64.png",
-      className: "dark-mode",
+      className: "create-post",
     },
   ];
 

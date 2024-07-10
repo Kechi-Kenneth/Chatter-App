@@ -5,17 +5,18 @@
   align-items: center;
   justify-content: center;
   max-width: 1100px;
-  margin-top: 8rem;
+  margin-top: 6rem;
   gap: 1px;
 }
 
+
 .right-side {
   height: 500px;
-  width: 550px;
-  background-color: rgb(171, 129, 74);
+  width: 600px;
+  background-color: #141416;
 }
 .left-side {
   height: 500px;
-  width: 550px;
-  background-color: rgb(23, 95, 159);
+  width: 600px;
+  background-color: aliceblue;
 }
