@@ -1,0 +1,111 @@
+/* SectionComponent.css */
+
+.welcome-section-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  background:linear-gradient( aliceblue 15%, rgba(0, 0, 0, 0.1) 35%,aliceblue 20%);
+}
+
+.animated-text {
+  font-size: 4rem;
+  color:black;
+  font-weight:700;
+  font-style: italic;
+  animation: typing 5s steps(25),fadein-out 3s linear infinite , bounce 2s ease-in-out infinite;
+  white-space: nowrap; 
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  animation-direction: alternate;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes fadein-out {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.ratings {
+  margin-top: 4rem;
+  line-height: 1rem;
+
+ 
+}
+
+
+
+.available {
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+.available img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.browsers {
+  padding: 3px;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
+  gap: 2rem;
+  border: 1px solid black;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.star-rating img {
+  height: 2rem;
+  width: 2rem;
+}
+.users-size {
+  font-weight:400;
+  font-size: 1.5rem;
+}
+
+
+.get-started-one {
+  font-size:0.7rem;
+  font-weight: 500;
+  margin-left: -10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  background-color: rgb(44, 56, 93);
+ height: 2.5rem;
+ color: white;
+ width: 6rem;
+ border-radius: 1rem;
+}
+
+.get-started-one:hover {
+  font-size:0.9rem;
+  text-decoration: none;
+  background-color: aliceblue;
+  color: black;
+}
+
