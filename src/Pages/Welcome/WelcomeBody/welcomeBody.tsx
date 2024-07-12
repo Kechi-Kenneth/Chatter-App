@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './WelcomeBody.css'
 import WelcomeSectionA from './WelcomeSectionA';
-import DropDownSignUpForm from '../DropDownSignUpForm/DropDownSignUpForm';
+import DropDownSignUpForm from '../../../Components/DropDownSignUpForm/DropDownSignUpForm';
 
 const welcomeBody:React.FC = () => {
   const [isFormVisible, setFormVisible] = useState (false);
