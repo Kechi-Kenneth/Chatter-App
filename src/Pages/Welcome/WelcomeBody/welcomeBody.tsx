@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './WelcomeBody.css'
 import WelcomeSectionA from './WelcomeSectionA';
+import DropDownSignUpForm from '../DropDownSignUpForm/DropDownSignUpForm';
 
 const welcomeBody:React.FC = () => {
+  const [isFormVisible, setFormVisible] = useState (false);
+
+  const handleButtonClick = () =>{
+    setFormVisible(!isFormVisible);
+  };
+
+
+  const handleFormSubmit = (formData: { name: string; emailOrNumber: string; birthdate: string; password: string; confirmPassword: string; gender:string; }) => {
+    console.log('Form Submitted:', formData);
+    setFormVisible(false); // Hide form after submission
+  };
+
+  const handleFormClose = () => {
+    setFormVisible(false);
+  };
+
   const paragraphs = [
     "Looking for the ",
     "It is not too",
@@ -28,12 +45,17 @@ const welcomeBody:React.FC = () => {
         </div>
         <button className='apple-button'><span><img src="" alt="" /></span>Sign up with Apple</button>
         <p style={{marginTop:-3}}>Or</p>
-        <button style={{marginTop:-15}} className='create-account'>Create Account</button>
-        <p>By signing up,you agree to the terms and privacy policy,including Cookie Use.</p>
+        <button style={{marginTop:-15}} className='create-account' onClick={handleButtonClick}>Create Account</button>
+        {isFormVisible && (
+        <DropDownSignUpForm onSubmit={handleFormSubmit} onClose={handleFormClose} />
+      )}
+        <p className='terms-condition'>By signing up,you agree to the terms and privacy <br /> policy,including Cookie Use.</p>
         <div>
         <div>
-         <p> Already have an Account? <span><button>Sign in</button></span></p>
-          
+         <p style={{fontSize:20, fontWeight:500, marginTop:-15}}> Already have an Account? </p> 
+        </div>
+        <div className='okayy'>
+       <button className='okay'>Sign in</button>
         </div>
         </div>
       </div>

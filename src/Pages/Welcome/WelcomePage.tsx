@@ -30,7 +30,9 @@ const WelcomePage = () => {
         items={NavBarItems}
       />
     <WelcomeBody />
+    <div>
     <WelcomeFooter />
+    </div>
     </div>
   );
 };
