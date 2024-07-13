@@ -36,8 +36,10 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
   };
   return (
     <div className="dropdown">
+    
           <button className="close-button" type="button" onClick={onClose}>Close</button>
       <form className="sign-up-form" onSubmit={handleSubmit}>
+      <h3 style={{marginTop:-40,}} className="">Create Your Account</h3>
         <input
           type="text"
           name="name"
@@ -78,6 +80,7 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
             Female
           </label>
         </div>
+     
         <input
           type="date"
           name="birthdate"
@@ -86,6 +89,8 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
           onChange={handleChange}
           required
         />
+       
+        
         <input
           type="password"
           name="password"

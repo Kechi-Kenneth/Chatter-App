@@ -1,11 +1,12 @@
 /* DropdownSignUpForm.css */
 
 .dropdown {
+  border-radius: 2rem;
   position: fixed;
-  top: 1rem;
-  left: 0;
-  width: 70%;
-  height: 70%;
+  top: 4rem;
+  margin-left: -35rem;
+  max-width: 900px;
+  height: 550px;
   background-color: black;
   color: white;
   display: flex;
@@ -15,6 +16,7 @@
 }
 
 .close-button {
+  border-radius: 10rem;
   position: absolute;
   top: 10px;
   right: 10px;
