@@ -1,16 +1,14 @@
-
 .navbar {
-  background:rgba(0, 0, 0, 0.1) ;
+  background: rgba(0, 0, 0, 0.1);
   padding: 0.5rem 0;
-  position:fixed ;
-  margin-top: 1.5rem;
+  position: fixed;
+  margin-top: 1.2rem;
   z-index: 40;
   margin-left: 2.7rem;
   width: 1200px;
   border-radius: 20px;
-  border-bottom: 0.5px solid  rgb(80, 77, 77);
+  border-bottom: 0.5px solid rgb(80, 77, 77);
   backdrop-filter: blur(50px);
-  
 }
 
 .nav-content {
@@ -52,7 +50,6 @@
   opacity: 3;
 } */
 
-
 .navbar-items {
   text-decoration: none;
   font-size: 1rem;
@@ -60,7 +57,7 @@
   color: black;
   position: relative;
   cursor: pointer;
-margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 .navbar-header {
@@ -77,8 +74,6 @@ margin-left: 4rem;
   margin-left: -14px;
 }
 
-
-
 .navbar-items {
   cursor: pointer;
 }
@@ -88,8 +83,6 @@ margin-left: 4rem;
   height: 20px;
 }
 
-
-
 @media (max-width: 425px) {
   .nav-logo {
     width: 10rem;
@@ -97,18 +90,15 @@ margin-left: 4rem;
   }
 }
 
- @media (max-width: 740px) {
-
+@media (max-width: 740px) {
   .navbar-content ul {
     display: none;
   }
-} 
+}
 
-
-@media (max-width:1325px) {
+@media (max-width: 1325px) {
   .nav-wrapper {
     padding: 0.2rem;
-
   }
 }
 
@@ -131,7 +121,6 @@ margin-left: 4rem;
   opacity: 3;
 }
 .features:hover::before {
- 
   width: 11%;
   transform: translateX(0);
   opacity: 3;
@@ -168,7 +157,6 @@ margin-left: 4rem;
   transform: translateX(0);
   opacity: 3;
 }
-
 
 .memberships::before {
   content: " ";
@@ -221,28 +209,24 @@ margin-left: 4rem;
   transition: all 0.4s ease;
 }
 
-
-
-
-.notification:hover  {
-  background-color: rgb(220, 220, 255); 
-
+.notification:hover {
+  background-color: rgb(220, 220, 255);
 }
 
 .create-post img {
   border-radius: 1rem;
   height: 2.2rem;
   width: 2.2rem;
-  box-shadow: rgb(80, 90, 99) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgb(80, 90, 99) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-
-.create-post:hover  {
-  background-color: rgb(220, 220, 255); 
+.create-post:hover {
+  background-color: rgb(220, 220, 255);
 }
 
 .get-started {
-  font-size:0.7rem;
+  font-size: 0.7rem;
   font-weight: 500;
   margin-left: -11rem;
   display: flex;
@@ -250,14 +234,14 @@ margin-left: 4rem;
   align-items: center;
   margin-right: 2rem;
   background-color: rgb(44, 56, 93);
- height: 2.5rem;
- color: white;
- width: 6rem;
- border-radius: 1rem;
+  height: 2.5rem;
+  color: white;
+  width: 6rem;
+  border-radius: 1rem;
 }
 
 .get-started:hover {
-  font-size:0.9rem;
+  font-size: 0.9rem;
   text-decoration: none;
   background-color: aliceblue;
   color: black;

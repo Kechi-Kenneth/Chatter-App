@@ -6,8 +6,9 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 7rem;
   background:linear-gradient( aliceblue 85%, rgba(0, 0, 0, 0.1) 5%);
+  /* background-image: linear-gradient(to bottom right,aliceblue 75% , rgba(0, 0, 0, 0.1) 35%); */
 }
 
 .animated-text {
