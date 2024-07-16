@@ -1,18 +1,20 @@
 .body {
-  margin-left: 4.5rem;
+  /* margin-left: 4.5rem; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 6rem;
 
+
 }
 
 
 .right-side {
   background:linear-gradient( aliceblue 5%, rgba(0, 0, 0, 0.1) 45%,aliceblue);
-  line-height: 5.5rem;
-  width: 550px;
+  line-height: 5rem;
+  max-width: 550px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,8 +22,11 @@
 }
 .left-side {
   width: 600px;
+ 
 
 }
+
+
 
 .join-text {
   

@@ -3,16 +3,20 @@
   padding: 0.5rem 0;
   position: fixed;
   margin-top: 1.2rem;
+
+ 
+ 
   z-index: 40;
-  margin-left: 2.7rem;
-  width: 1200px;
+  /* margin-left: 4rem; */
+  margin: 1rem auto;
+  max-width: 1000px;
   border-radius: 20px;
   border-bottom: 0.5px solid rgb(80, 77, 77);
   backdrop-filter: blur(50px);
 }
 
 .nav-content {
-  max-width: 1250px;
+  max-width: 1100px;
   display: flex;
   height: 1.8rem;
   justify-content: space-between;
@@ -57,7 +61,7 @@
   color: black;
   position: relative;
   cursor: pointer;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .navbar-header {
@@ -91,13 +95,13 @@
 }
 
 @media (max-width: 740px) {
-  .navbar-content ul {
+  .nav-content ul {
     display: none;
   }
 }
 
 @media (max-width: 1325px) {
-  .nav-wrapper {
+  .navbar {
     padding: 0.2rem;
   }
 }
@@ -116,12 +120,12 @@
 }
 
 .my-feed:hover::before {
-  width: 9%;
+  width: 12%;
   transform: translateX(0);
   opacity: 3;
 }
 .features:hover::before {
-  width: 11%;
+  width: 13%;
   transform: translateX(0);
   opacity: 3;
 }
@@ -153,7 +157,7 @@
 }
 
 .more:hover::before {
-  width: 8%;
+  width: 10%;
   transform: translateX(0);
   opacity: 3;
 }
