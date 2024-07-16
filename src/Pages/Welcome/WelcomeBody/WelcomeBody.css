@@ -13,15 +13,14 @@
 .right-side {
   background:linear-gradient( aliceblue 5%, rgba(0, 0, 0, 0.1) 45%,aliceblue);
   line-height: 5rem;
-  max-width: 550px;
-  
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .left-side {
-  width: 600px;
+  width: 700px;
  
 
 }

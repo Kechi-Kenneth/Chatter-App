@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 import './WelcomeBody.css'
 import WelcomeSectionA from './WelcomeSectionA';
 import DropDownSignUpForm from '../../../Components/DropDownSignUpForm/DropDownSignUpForm';
@@ -55,7 +56,9 @@ const welcomeBody:React.FC = () => {
          <p style={{fontSize:20, fontWeight:500, marginTop:-15}}> Already have an Account? </p> 
         </div>
         <div className='okayy'>
+        <Link to="/signin">
        <button className='okay'>Sign in</button>
+       </Link>
         </div>
         </div>
       </div>

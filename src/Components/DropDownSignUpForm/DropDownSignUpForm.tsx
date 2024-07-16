@@ -39,7 +39,7 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
     
           <button className="close-button" type="button" onClick={onClose}>Close</button>
       <form className="sign-up-form" onSubmit={handleSubmit}>
-      <h3 style={{marginTop:-40,}} className="">Create Your Account</h3>
+      <h3 style={{fontSize:30, lineHeight:3}} className="">Create Your Account</h3>
         <input
           type="text"
           name="name"
@@ -107,7 +107,7 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Submit</button>
+        <button className="submit-button" type="submit">Submit</button>
     
       </form>
     </div>
