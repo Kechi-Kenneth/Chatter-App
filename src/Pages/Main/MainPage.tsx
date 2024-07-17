@@ -18,9 +18,10 @@ const MainPage = () => {
         <NavBar
         title="ChaTTer"
         icon="icons8-favorite-chat-message-100.png"
-        items={NavBarItems}
-        
+        items={NavBarItems}  
       />
+
+      
     </div>
   )
 }

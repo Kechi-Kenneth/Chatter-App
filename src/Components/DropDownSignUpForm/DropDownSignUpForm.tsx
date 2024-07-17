@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import React, { useState } from "react";
 import "./DropDownSignUpForm.css";
 
 type SignUpProps = {
@@ -20,7 +20,7 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
     birthdate: "",
     password: "",
     confirmPassword: "",
-    gender:"",
+    gender: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,18 +28,19 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSubmit(formData);
   };
   return (
     <div className="dropdown">
-    
-          <button className="close-button" type="button" onClick={onClose}>Close</button>
+      <button className="close-button" type="button" onClick={onClose}>
+        Close
+      </button>
       <form className="sign-up-form" onSubmit={handleSubmit}>
-      <h3 style={{fontSize:30, lineHeight:3}} className="">Create Your Account</h3>
+        <h3 style={{ fontSize: 30, lineHeight: 3 }} className="">
+          Create Your Account
+        </h3>
         <input
           type="text"
           name="name"
@@ -56,13 +57,13 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
           onChange={handleChange}
           required
         />
-                <div className="gender-selection">
+        <div className="gender-selection">
           <label>
             <input
               type="radio"
               name="gender"
               value="male"
-              checked={formData.gender === 'male'}
+              checked={formData.gender === "male"}
               onChange={handleChange}
               required
             />
@@ -73,14 +74,14 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
               type="radio"
               name="gender"
               value="female"
-              checked={formData.gender === 'female'}
+              checked={formData.gender === "female"}
               onChange={handleChange}
               required
             />
             Female
           </label>
         </div>
-     
+
         <input
           type="date"
           name="birthdate"
@@ -89,8 +90,7 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
           onChange={handleChange}
           required
         />
-       
-        
+
         <input
           type="password"
           name="password"
@@ -107,8 +107,9 @@ const DropDownSignUpForm: React.FC<SignUpProps> = ({ onSubmit, onClose }) => {
           onChange={handleChange}
           required
         />
-        <button className="submit-button" type="submit">Submit</button>
-    
+        <button className="submit-button" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

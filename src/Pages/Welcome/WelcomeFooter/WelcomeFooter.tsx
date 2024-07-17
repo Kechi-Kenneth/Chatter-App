@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './WelcomeFooter.css'
 
 const WelcomeFooter = () => {

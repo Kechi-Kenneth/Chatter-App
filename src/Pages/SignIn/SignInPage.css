@@ -1,0 +1,65 @@
+.container {
+  box-shadow: 10px 15px 20px 2px rgb(44, 56, 93);
+  border: 1px solid black;
+  background-color: aliceblue;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-bottom: 40px;
+  padding-right: 70px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.social-buttons button {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: aliceblue;
+  height: 3rem;
+  color: black;
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+.social-buttons button:hover {
+  font-size: 0.7rem;
+  text-decoration: none;
+  background-color: rgb(44, 56, 93);
+  color: white;
+}
+
+.sign-in-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.form input {
+  width: calc(100% - 10px); /* Ensure input fields fit the form */
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(44, 56, 93);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background-color: rgb(245, 245, 245);
+  color: black;
+  border: 1px solid black;
+}
