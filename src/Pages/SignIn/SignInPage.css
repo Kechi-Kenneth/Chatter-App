@@ -63,3 +63,32 @@
   color: black;
   border: 1px solid black;
 }
+
+.back-symbol {
+  margin-top: -2rem;
+  margin-left: -4rem;
+
+  animation: moveBackAndForth 2s infinite;
+}
+
+@keyframes moveBackAndForth {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(
+      15px
+    ); /* Adjust the value for the desired movement distance */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: -10px;
+}
