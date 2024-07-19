@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./SignInPage.css";
 import { useState } from "react";
 
-const SignInPage: React.FC = () => {
+const SignInPage: React.FC = ( ) => {
   const [isFormVisble, setIsFormVisible] = useState<boolean>(false);
 
   const handleToggleButtonClick = () => {
@@ -81,7 +81,7 @@ const SignInPage: React.FC = () => {
         )}
       </div>
       <p className="sign-up">Don't have an Account?</p>
-      <Link to="/welcome">
+      <Link to="/">
         <p className="sign-up">Sign Up </p>
       </Link>
     </div>

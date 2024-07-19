@@ -6,8 +6,7 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-  max-width: 600px;
+  max-width: 550px;
   margin-left: 35rem;
   margin: 1rem auto;
 
@@ -18,7 +17,7 @@
   flex-basis: auto;
   flex-direction: column;
 
-  padding-left: 40px;
+  padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-top: 20px;
