@@ -23,12 +23,6 @@ const MainPage = () => {
       
 
       <div className='body'>
-     <div className="left-handle">
-
-     </div>
-     <div className="left-handle">
-      
-      </div>
 
       </div>
       
