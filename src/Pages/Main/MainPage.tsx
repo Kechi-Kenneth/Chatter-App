@@ -20,7 +20,17 @@ const MainPage = () => {
         icon="icons8-favorite-chat-message-100.png"
         items={NavBarItems}  
       />
+      
 
+      <div className='body'>
+     <div className="left-handle">
+
+     </div>
+     <div className="left-handle">
+      
+      </div>
+
+      </div>
       
     </div>
   )
