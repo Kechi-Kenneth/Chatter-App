@@ -1,0 +1,33 @@
+.body {
+
+  margin-top: 7rem;
+  z-index: 40;
+  left: 0;
+  right: 0;
+gap:0.5rem;
+  backdrop-filter: blur(50px);
+  
+}
+
+.left-section {
+  padding: 20px;
+  display: flex;
+  background:rgba(26, 25, 25, 0.1) ;
+}
+
+.middle-section {
+  display: flex;
+  background-color: black;
+  width: 500px;
+  height: 300px;
+}
+
+
+.right-section {
+  display: flex;
+  height: 300px;
+background-color: blue;
+width: 300px;
+}
+
+
