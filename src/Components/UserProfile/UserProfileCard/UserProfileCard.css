@@ -1,6 +1,6 @@
 .profile-card {
   padding-top: 1rem;
-  width: 200px;
+  width: 300px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -11,9 +11,10 @@
 
 .profile-background {
   margin: 8px;
+  padding: 6rem ;
   border-radius: 20px;
   background-color: rgb(89, 97, 104);
-  height: 110px;
+
   background-size: cover;
   background-position: center;
   position: relative;
@@ -21,7 +22,7 @@
 
 .profile-icon {
   border: 2px solid white;
-  font-size: 15px;
+  font-size: 25px;
   color: white;
   position: absolute;
   bottom: -27px;
@@ -33,16 +34,16 @@
 }
 
 .profile-name {
-  margin: -7px 0 10px;
+  margin: -4px 0 10px;
   margin-left: 1.5rem;
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .profile-job {
   color: grey;
-  margin: -10px 0 10px;
-  margin-left: 3.2rem;
+  margin: -6px 0 12px;
+  margin-left: 1.2rem;
   font-size: 10px;
   font-weight: bold;
 }
