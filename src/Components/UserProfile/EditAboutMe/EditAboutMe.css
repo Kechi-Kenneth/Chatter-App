@@ -1,0 +1,36 @@
+.save-edit-about-me {
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 56, 93);
+  height: 2.5rem;
+  color: white;
+  width: 6rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+.save-edit-about:hover {
+  font-size: 0.5rem;
+  text-decoration: none;
+  background-color: aliceblue;
+  color: black;
+}
+
+.edit {
+  line-height: 3rem;
+  margin-top: 1rem;
+  padding-top: 0.2rem;
+  width: 300px;
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  min-height: 2rem;
+}

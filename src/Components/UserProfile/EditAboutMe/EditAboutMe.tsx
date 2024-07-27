@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom";
+import'./EditAboutMe.css'
 import { EditAboutMeProps, UserDetails } from "../../Types/UserInfo";
 
 
@@ -19,10 +19,15 @@ const EditAboutMe:React.FC<EditAboutMeProps> = ({userDetails, onSave}) => {
 
 
  return (
-  <div>
+  <div className="edit">
     <h2>Edit About Me</h2>
+    <label>describe yourself</label>
     <div>
-      <label>Bio:</label>
+      <textarea name="aboutMe" value={editDetails.aboutMe} onChange={handleChange} />
+      <p>{editDetails.aboutMe.split(' ').length} / 750 words</p>
+    </div>
+    <div>
+      <label>Nicky:</label>
       <input type="text" name="bio" value={editDetails.bio} onChange={handleChange} />
     </div>
     <div>
@@ -41,12 +46,8 @@ const EditAboutMe:React.FC<EditAboutMeProps> = ({userDetails, onSave}) => {
       <label>Date of Birth:</label>
       <input type="date" name="dateOfBirth" value={editDetails.dateOfBirth} onChange={handleChange} />
     </div>
-    <div>
-      <label>About Me (750 words max):</label>
-      <textarea name="aboutMe" value={editDetails.aboutMe} onChange={handleChange} />
-      <p>{editDetails.aboutMe.split(' ').length} / 750 words</p>
-    </div>
-      <button onClick={handleSave}>Save</button>
+
+      <button className="save-edit-about-me" onClick={handleSave}>Save</button>
   </div>
 );
 }

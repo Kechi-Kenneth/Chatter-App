@@ -1,0 +1,9 @@
+.right-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  background:rgba(26, 25, 25, 0.1) ;
+}

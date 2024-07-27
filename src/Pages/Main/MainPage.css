@@ -9,8 +9,9 @@ gap:0.5rem;
 }
 
 .left-section {
+  margin-top: -15rem;
+  margin-bottom: -9rem;
   padding: 20px;
-  display: flex;
   background:rgba(26, 25, 25, 0.1) ;
 }
 
@@ -20,13 +21,4 @@ gap:0.5rem;
   width: 500px;
   height: 300px;
 }
-
-
-.right-section {
-  display: flex;
-  height: 300px;
-background-color: blue;
-width: 300px;
-}
-
 

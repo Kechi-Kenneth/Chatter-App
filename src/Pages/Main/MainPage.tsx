@@ -3,7 +3,7 @@ import './MainPage.css';
 import UserProfile from "../../Components/UserProfile/UserProfile";
 import MyFeed from "../../Components/MyFeed/MyFeed";
 import RightFeatures from "../../Components/RightFeatures/RightFeatures";
-
+import WelcomeFooter from "../Welcome/WelcomeFooter/WelcomeFooter";
 
 const MainPage = () => {
   const NavBarItems: Array<{
@@ -60,6 +60,7 @@ const MainPage = () => {
            <RightFeatures />
         </div>
       </div>
+      <WelcomeFooter/>
     </div>
   );
 };
